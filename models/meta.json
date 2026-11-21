@@ -1,0 +1,73 @@
+{
+  "model_name": "HistGradientBoostingRegressor",
+  "target_mode": "log_ratio",
+  "wind_speed_unit": "kmh",
+  "threshold": 60,
+  "model_params": {
+    "max_depth": 3,
+    "learning_rate": 0.05,
+    "max_iter": 300,
+    "random_state": 0
+  },
+  "features": [
+    "pm25_today",
+    "pm25_lag1",
+    "pm25_lag2",
+    "pm25_lag3",
+    "pm25_lag6",
+    "pm25_mean3",
+    "pm25_mean7",
+    "temp",
+    "wind_speed",
+    "wind_dir_sin",
+    "wind_dir_cos",
+    "rain",
+    "season_sin",
+    "season_cos",
+    "humidity",
+    "temp_range",
+    "wind_calm"
+  ],
+  "feature_count": 17,
+  "interval_method": "oof_monthly_conformal",
+  "q80": 28.982,
+  "q90": 45.5889,
+  "monthly_q80": {
+    "1": 44.15,
+    "2": 42.92,
+    "3": 20.95,
+    "4": 19.84,
+    "5": 21.78,
+    "6": 15.37,
+    "7": 13.85,
+    "8": 11.47,
+    "9": 13.42,
+    "10": 28.56,
+    "11": 70.55,
+    "12": 75.84
+  },
+  "monthly_q90": {
+    "1": 55.08,
+    "2": 49.93,
+    "3": 24.6,
+    "4": 29.63,
+    "5": 30.33,
+    "6": 23.34,
+    "7": 17.48,
+    "8": 15.39,
+    "9": 21.72,
+    "10": 41.12,
+    "11": 93.73,
+    "12": 101.18
+  },
+  "oof_sample_count": 745,
+  "train_date_range": [
+    "2024-01-01",
+    "2026-06-29"
+  ],
+  "train_rows": 895,
+  "test_rows": 120,
+  "model_trained_through": "2026-06-29",
+  "sklearn_version": "1.9.1",
+  "trained_at": "2026-11-21T12:37:39.115779+00:00"
+}
